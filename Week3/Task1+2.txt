@@ -1,0 +1,12 @@
+1. Sort the following functions in the ascending order of Big O notation:
+Sorted: O(1) -> O(2LOGN) -> O(N) -> O(NLOGN) -> O(N2) -> O(N3) -> O(2N)
+
+2. Given an integer number n, your task is to write two different algorithms in pseudo-codes to calculate 2n , and evaluate the complexity of the algorithms. 
++Algorithm1 : 
+Initialize ans = 1;
+FOR(i,1,N) ans = 2 * ans;
+complexity of the algorithms : O(N)
++Algorithm2 : 
+	Đệ quy: 2n = 2n/2 * 2n/2 (nếu n chẵn)
+	2n = 2n/2 * 2n/2 * 2 (nếu n lẻ)
+complexity of the algorithms : O(logN)
