@@ -1,0 +1,33 @@
+1. Đánh giá độ phức tạp phiên bản tree
+    - NumOfChild: O(n) với n là số lượng con của node
+    - isBSTNode: O(n) với n là số lượng con của node
+    - isHeapNode: O(n) với n là số lượng con của node
+    - find(node no, int data): O(logn) với n là số lượng con của node no
+    - insert(node no, int data): O(logn + n) với n là số lượng con của node no
+    - remove_child(node no, int data): O(n^2 + n) với n là số lượng con của node no // travese all child n^2, shift n 
+    - preorder(node no): O(n) với n là số lượng con của node no
+    - inorder(node no): O(n) với n là số lượng con của node no
+    - isBinaryTree(): O(n^2) với n là số lượng con của node no, k là số con của 1 node 
+    - isBST() : O(n^2) với n là số lượng con của node no, k là số con của 1 node 
+    - isHeap() : O(n^2) với n là số lượng con của node no, k là số con của 1 node
+    - inorder(node no): O(n) với n là số lượng con của node no
+    - height(Node no): O(n^2) với n là số lượng con của node no // go up n, go down n
+    - depth(Node no): O(n) với n là số lượng tổ tiên của node no
+    - numberOfLeaves: O(n^2) với n là số lượng con của node no // go up n, go down n
+    - findMax: O(n^2) với n là số lượng con của node no // go up n, go down n
+    - findMaxChild: O(n^2) với n là số lượng con của node no // go up n, go down n
+2. Đánh giá độ phức tạp thuật toán phiên bản upgrade_tree
+    - find(int data) : O(n) với n là số lượng node của cây
+    - insert(node no, int data): O(n) // only find n
+    - remove_child(node no, int data): O(logn + n) với n là số lượng con của node no // erase logn, delete traverse n child
+    - preorder(node no): O(n) với n là số lượng node của cây
+    - inorder(node no): O(n) với n là số lượng node của cây
+    - isBinaryTree(): O(n) với n là số lượng node của cây
+    - isBST() : O(n) với n là số lượng node của cây
+    - isHeap() : O(n^2) với n là số lượng node của cây
+    - inorder(node no): O(n) với n là số lượng node của cây
+    - height(Node no): O(nk) với k là số lượng cha của no
+    - depth(Node no): O(k) với k là số lượng cha của no
+    - numberOfLeaves: O(n) với n là số lượng node của cây
+    - findMax: O(n) với n là số lượng node của cây
+    - findMaxChild: O(n) với n là số lượng node của cây
