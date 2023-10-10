@@ -1,0 +1,5 @@
+Hàm băm (hash function) cần đạt được hai thuộc tính quan trọng sau:
+
+1. Độc đáo (Deterministic): Mỗi lần đầu vào (input) được băm, nó phải tạo ra một giá trị băm (hash value) duy nhất. Điều này đảm bảo tính duy nhất của dữ liệu khi nó được lưu trữ hoặc tìm kiếm. Nếu hai đầu vào khác nhau tạo ra cùng một giá trị băm, đó gọi là xung đột (collision) và nó làm giảm hiệu suất và độ tin cậy của hàm băm.
+
+2. Hiệu quả tính toán (Efficient to Compute): Hàm băm nên được tính toán nhanh chóng. Trong các ứng dụng thời gian thực hoặc các hệ thống lưu trữ lớn, việc tính toán giá trị băm cần phải nhanh chóng để đảm bảo hiệu suất cao.
