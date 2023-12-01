@@ -1,0 +1,17 @@
+Phần 1: Chứng minh nếu đồ thị là hai màu thì nó không chứa chu trình độ dài lẻ
+
+1.Giả sử đồ thị G là một đồ thị hai màu. Điều này có nghĩa là các đỉnh của G có thể được chia thành hai tập hợp sao cho không có hai đỉnh nào trong cùng một tập hợp được nối với nhau bằng một cạnh.
+2.Giả sử rằng G chứa một chu trình độ dài lẻ.
+3.Bắt đầu từ một đỉnh bất kỳ trên chu trình, ta tô màu cho các đỉnh trên chu trình, xen kẽ giữa hai màu khi di chuyển dọc theo chu trình.
+4.Vì chu trình có độ dài lẻ, khi quay trở lại đỉnh bắt đầu, ta sẽ kết thúc với màu khác với màu của đỉnh bắt đầu.
+5.Điều này dẫn đến một mâu thuẫn với giả thiết rằng G là một đồ thị hai màu, vì có một cạnh nối giữa hai đỉnh cùng màu.
+
+
+Phần 2: Chứng minh nếu đồ thị không chứa chu trình độ dài lẻ thì nó là đồ thị hai màu
+
+1.Giả sử G là một đồ thị không chứa chu trình độ dài lẻ.
+2.Chọn một đỉnh bất kỳ u và tô màu cho u với một trong hai màu. Sau đó, tô màu cho tất cả các đỉnh kề với 
+u bằng màu còn lại.
+3.Tiếp tục quá trình này cho tất cả các đỉnh chưa được tô màu trong G, tô màu xen kẽ cho các đỉnh kề với nhau.
+4.Vì G không chứa chu trình độ dài lẻ, quá trình này sẽ không bao giờ dẫn đến việc phải tô màu cho một đỉnh với một màu khác với màu đã chọn trước đó.
+5.Kết quả là tất cả các đỉnh của G đã được tô màu sao cho không có cạnh nào nối giữa hai đỉnh cùng màu.

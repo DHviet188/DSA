@@ -1,0 +1,11 @@
+Phát triển Kruskal:
+- Sắp xếp tất cả các cạnh của đồ thị theo trọng số tăng dần.
+- Khởi tạo rừng (tập hợp các cây) là rỗng.
+- Mỗi đỉnh của đồ thị là một cây riêng lẻ.
+- Duyệt qua các cạnh đã được sắp xếp. Với mỗi cạnh, kiểm tra xem nó có nối hai cây khác nhau trong rừng hay không (sử dụng cấu trúc dữ liệu Disjoint-set).
+- Nếu cạnh nối hai cây khác nhau, thêm cạnh đó vào rừng và hợp nhất hai cây đó.
+
+Phát triển Prim:
+- Tạo một tập hợp để theo dõi các đỉnh đã được thêm vào rừng.
+- Duyệt qua mỗi đỉnh của đồ thị. Đối với mỗi đỉnh chưa được thêm vào rừng, thực hiện thuật toán Prim từ đỉnh đó để tạo ra một cây bao trùm nhỏ nhất.
+- Trong quá trình thực hiện, chỉ thêm cạnh có trọng số nhỏ nhất và nối với một đỉnh chưa nằm trong rừng.

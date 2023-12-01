@@ -1,0 +1,18 @@
+Xét các khả năng tạo ra cạnh giữa mọi cặp đỉnh trong đồ thị.
+
+1. Mỗi cặp đỉnh có 3 khả năng
+- Đối với mỗi cặp đỉnh (u,v) trong đồ thị
++ Có thể có một cạnh hướng từ u đến v
++ Có thể có một cạnh hướng từ v đến u
++ Hoặc ko có cạnh nào từ v đến u
+
+2.Số Lượng Cạnh Có Thể Có:
+Vì mỗi đỉnh có thể có liên kết với V−1 đỉnh khác (không tính liên kết với chính nó), và mỗi liên kết như vậy có ba khả năng như đã mô tả ở trên, tổng số cách tạo cạnh cho mỗi đỉnh là 3 ^(V-1)
+
+3. Tính Tổng Số Đồ Thị Có Thể Có:
+Vì có V đỉnh và mỗi đỉnh có 3^(V-1) khả năng tạo cạnh, tổng số đồ thị có thể có là [3^(V-1)]^V
+
+4. Loại Bỏ Cạnh Song Song:
+
+Để không có cạnh song song, mỗi cặp đỉnh (u,v) chỉ có thể có một trong hai trường hợp: hoặc là cạnh từ u đến v, hoặc là cạnh từ v đến u, hoặc là không có cạnh nào. Do đó, mỗi cặp đỉnh chỉ có hai khả năng thay vì ba.
+Vì vậy, tổng số đồ thị không chứa cạnh song song là 2^[V(V−1)/2] (vì mỗi cặp đỉnh chỉ được tính một lần).

@@ -1,0 +1,4 @@
+- Trong một đồ thị vô hướng với V đỉnh, mỗi cặp đỉnh có thể tạo thành một cạnh. Do đó, tổng số cạnh có thể tạo thành là số tổ hợp chập 2 của V đỉnh, được tính bằng công thức VC2 = V(V-1)/2
+- Để tạo một đồ thị với E cạnh, ta cần chọn E cạnh từ tổng số cạnh có thể có. Điều này tương đương với việc chọn E cạnh từ V(V-1)/2 cạnh có thể có, tức là số tổ hợp chập E của V(V-1)/2 cạnh, được tính bằng công thức 
+(V(V-1)/2)CE
+- Số lượng đồ thị vô hướng khác nhau với V đỉnh và E cạnh là (V(V-1)/2)CE

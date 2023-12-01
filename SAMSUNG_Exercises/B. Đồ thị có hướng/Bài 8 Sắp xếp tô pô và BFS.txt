@@ -1,0 +1,8 @@
+1.BFS khám phá đồ thị theo lớp, từ đỉnh nguồn tới tất cả các đỉnh mà nó có thể đến được, mà không quan tâm đến hướng của các cạnh. BFS chỉ đơn giản là ghi lại khoảng cách ngắn nhất từ đỉnh nguồn tới mỗi đỉnh khác.
+
+2. Trong một đồ thị có hướng không chu trình DAG, một đỉnh có thể phụ thuộc vào các đỉnh khác (có cạnh hướng từ các đỉnh này tới nó).
+BFS không đảm bảo rằng các đỉnh phụ thuộc sẽ được xử lý trước đỉnh mà chúng ảnh hưởng, vì BFS không xem xét hướng của cạnh.
+
+3. Ví dụ: Xét DAG với các cạnh 1→2, 1→3, và 2→3. Khi thực hiện BFS từ đỉnh 1, cả đỉnh 2 và 3 có thể được khám phá ở cùng một lần lặp (cùng khoảng cách từ nguồn), nhưng thứ tự tô pô chính xác phải là 1,2,3 vì đỉnh 3 phụ thuộc vào đỉnh 2.
+
+4.Nếu đồ thị có chu trình, không thể có thứ tự tô pô. BFS không phát hiện chu trình và không thể sử dụng để xác định thứ tự tô pô trong trường hợp này.

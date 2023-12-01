@@ -1,0 +1,11 @@
+-Đồ thị 1: 0-1 0-2 0-3 1-3 1-4 2-5 2-9 3-6 4-7 4-8 5-8 5-9 6-7 6-9 7-8
+Đồ thị được cho bởi tập cạnh đầu tiên có chu trình Euler, vì tất cả các đỉnh của nó đều có bậc chẵn. Tuy nhiên, đồ thị này không có chu trình Hamilton, vì nó không thỏa mãn điều kiện Ore(bậc(u) + bậc (v) < n)
+
+-Đồ thị 2:  0-1 0-2 0-3 1-3 0-3 2-5 5-6 3-6 4-7 4-8 5-8 5-9 6-7 6-9 8-8
+Đồ thị được cho bởi tập cạnh thứ hai không có chu trình Euler, vì có hai đỉnh có bậc lẻ là 0 và 6. Đồ thị này cũng không có chu trình Hamilton, vì nó không thỏa mãn điều kiện Ore(bậc(u) + bậc (v) < n)
+
+-Đồ thị 3: 0-1 1-2 1-3 0-3 0-4 2-5 2-9 3-6 4-7 4-8 5-8 5-9 6-7 6-9 7-8
+Đồ thị được cho bởi tập cạnh thứ ba có chu trình Euler, vì tất cả các đỉnh của nó đều có bậc chẵn. Đồ thị này cũng có chu trình Hamilton, vì nó thỏa mãn điều kiện Ore(bậc(u) + bậc(v) < n)
+
+-Đồ thị 4: 4-1 7-9 6-2 7-3 5-0 0-2 0-8 1-6 3-9 6-3 2-8 1-5 9-8 4-5 4-7
+Đồ thị được cho bởi tập cạnh thứ tư không có chu trình Euler, vì có hai đỉnh có bậc lẻ là 0 và 9. Đồ thị này cũng không có chu trình Hamilton, vì nó không thỏa mãn điều kiện Ore(bậc(u) + bậc(v) < n)

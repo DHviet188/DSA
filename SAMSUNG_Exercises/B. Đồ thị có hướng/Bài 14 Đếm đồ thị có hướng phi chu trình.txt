@@ -1,0 +1,5 @@
+Số Lượng Cạnh Tối Đa Trong DAG:
+
+- Trong một DAG với V đỉnh, số lượng cạnh tối đa mà không tạo ra chu trình là V(V−1)/2. Điều này tương ứng với số lượng cạnh trong một đồ thị vô hướng hoàn chỉnh với V đỉnh.
+- Đối với mỗi cặp đỉnh (u,v), ta có hai khả năng: hoặc là có một cạnh hướng từ u đến v, hoặc là không có cạnh nào cả.
+- Vì mỗi cặp đỉnh có hai khả năng, tổng số DAG có thể có là 2^[V(V-1)/2]

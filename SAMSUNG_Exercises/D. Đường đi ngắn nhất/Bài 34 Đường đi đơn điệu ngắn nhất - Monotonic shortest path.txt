@@ -1,0 +1,7 @@
+Bước 1: Đường Đi Với Trọng Số Tăng Dần
+- Sắp xếp tất cả các cạnh của đồ thị theo trọng số tăng dần.
+- Áp dụng thuật toán tìm đường đi ngắn nhất (ví dụ: Dijkstra hoặc Bellman-Ford) với điều kiện chỉ xét các cạnh có trọng số lớn hơn hoặc bằng trọng số của cạnh trước đó trên đường đi.
+
+Bước 2: Đường Đi Với Trọng Số Giảm Dần
+- Sắp xếp lại tất cả các cạnh của đồ thị theo trọng số giảm dần.
+- Áp dụng thuật toán tìm đường đi ngắn nhất với điều kiện chỉ xét các cạnh có trọng số nhỏ hơn hoặc bằng trọng số của cạnh trước đó trên đường đi.

@@ -1,0 +1,19 @@
+Đồ thị Biconnected: Một đồ thị được gọi là biconnected nếu không có điểm articulation nào và nếu mỗi cặp đỉnh đều được nối với nhau bởi ít nhất hai đường đi không giao nhau.
+
+1. Xây Dựng Đường Đi Không Giao Nhau:
+Chọn hai đỉnh bất kỳ s và t trong G. Vì G là liên thông, tồn tại ít nhất một đường đi từ s đến t.
+Giả sử đường đi này là P.
+
+2.Sử Dụng Giả Thiết Không Có Điểm Articulation:
+Vì G không có điểm articulation, không có đỉnh nào trên P mà nếu loại bỏ nó sẽ làm đứt đường đi từ s đến t.
+Điều này có nghĩa là, với mỗi đỉnh v trên P, tồn tại ít nhất một đường đi khác từ s đến t không đi qua v.
+
+3.Xây Dựng Đường Đi Thứ Hai:
+Bắt đầu từ s, đi theo P cho đến đỉnh đầu tiên v có đường đi phụ đến t không đi qua v. Đường đi này có thể đi qua các đỉnh không thuộc P.
+Từ v, theo đường đi phụ này đến t.
+
+4.Kết Luận:
+Bây giờ ta có hai đường đi từ s đến t:
+Đường đi ban đầu P.
+Đường đi mới thông qua v, không trùng với P.
+Hai đường đi này không giao nhau tại bất kỳ điểm nào ngoại trừ s và t.

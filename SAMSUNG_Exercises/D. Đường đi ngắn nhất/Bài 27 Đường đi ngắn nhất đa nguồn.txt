@@ -1,0 +1,13 @@
+B1: Xác định đồ thị ban đầu
+Giả sử ta có một đồ thị G=(V,E) với trọng số không âm w(v) tại mỗi đỉnh v. Trong G, trọng số của một đường đi là tổng các trọng số của các đỉnh trên đường đi đó.
+
+B2: Tạo đồ thị mới
+Tạo một đồ thị mới G =(V,E) với cùng tập hợp các đỉnh nhưng với trọng số trên các cạnh. Đối với mỗi cạnh (u,v) trong E, chúng ta định nghĩa trọng số của cạnh (u,v) trong E là w(u,v)=w(v). Nghĩa là, trọng số của mỗi cạnh trong G được xác định bởi trọng số của đỉnh đích mà nó hướng tới trong G.
+
+B3: Chứng minh
+- Đường Đi Ngắn Nhất trong G: Trọng số của một đường đi từ đỉnh s đến t trong G là tổng trọng số của các đỉnh trên đường đi đó.
+- Đường Đi Ngắn Nhất trong G: Trọng số của một đường đi tương tự từ s đến t trong G là tổng trọng số của các cạnh trên đường đi đó, mà mỗi cạnh có trọng số bằng với trọng số của đỉnh đích trong G.
+
+B4: Áp dụng thuật toán
+Trong G, có thể sử dụng các thuật toán như Dijkstra hoặc Bellman-Ford để tìm đường đi ngắn nhất, do các trọng số cạnh không âm.
+Kết quả thu được từ G sẽ trực tiếp áp dụng được cho G.

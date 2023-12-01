@@ -1,0 +1,6 @@
+Bước 1: Chạy thuật toán Bellmon-Ford
+Bước 2: Tái đánh giá trọng số cạnh
+- Sử dụng các trọng số π[v] để tái đánh giá trọng số của mỗi cạnh v→w trong đồ thị ban đầu. Công thức mới cho trọng số của cạnh v→w sẽ là: w'(v,w)=w(v,w)+π[v]−π[w]
+Ở đây, w(v,w) là trọng số ban đầu của cạnh v→w, và w(v,w) là trọng số mới.
+
+Bước 3: Áp Dụng Thuật Toán Dijkstra

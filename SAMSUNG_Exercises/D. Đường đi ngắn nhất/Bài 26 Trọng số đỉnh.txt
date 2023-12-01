@@ -1,0 +1,8 @@
+B1: Sử dụng một min heap để lưu trữ các cạnh có thể được thêm vào cây bao trùm. Heap này chỉ chứa tối đa V cạnh tại mỗi thời điểm.
+B2: Chọn một đỉnh bất kỳ làm điểm bắt đầu.
+B3: Thêm tất cả các cạnh nối với đỉnh bắt đầu vào heap.
+B4: Trong khi heap không rỗng:
++ Xóa cạnh có trọng số nhỏ nhất khỏi heap.
++ Nếu cạnh này tạo ra một chu trình, bỏ qua cạnh đó.
++ Ngược lại, thêm cạnh đó vào MST và thêm các cạnh mới nối với đỉnh mới được thêm vào cây vào heap.
++ Cẩn thận để không thêm quá V cạnh vào heap tại bất kỳ thời điểm nào.

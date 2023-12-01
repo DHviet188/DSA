@@ -1,0 +1,19 @@
+I. Tìm SCC chứa đỉnh v
+1. Khởi tạo
+- Tạo một mảng visited để đánh dấu các đỉnh đã được thăm.
+- Khởi tạo một ngăn xếp (stack) để lưu trữ trình tự thăm các đỉnh.
+2. Thực Hiện DFS từ v:
+- Thực hiện DFS từ đỉnh v, đánh dấu tất cả các đỉnh có thể đến được từ v trong mảng visited.
+- Lưu trình tự thăm các đỉnh vào ngăn xếp.
+3.Tạo Đồ Thị Đảo Ngược:
+-Đảo ngược mọi cạnh của đồ thị ban đầu.
+4. Thực Hiện DFS Lần Thứ Hai:
+Khởi tạo lại mảng visited.
+Thực hiện DFS trên đồ thị đảo ngược, bắt đầu từ đỉnh ở đỉnh của ngăn xếp, chỉ thăm các đỉnh chưa được đánh dấu trong visited.
+Mỗi lần thực hiện DFS, các đỉnh được thăm tạo thành một thành phần liên thông mạnh.
+5. Thành phần liên thông mạnh chứa đỉnh v là tập hợp các đỉnh được thăm trong lần DFS thứ hai.
+
+II.Tìm tất cả các SCC con của đồ thị
+Thực hiện thuật toán tìm SCC chứa v như đã mô tả ở trên.
+Lặp lại quá trình này cho tất cả các đỉnh của đồ thị.
+Thu về kết quả cuối cùng

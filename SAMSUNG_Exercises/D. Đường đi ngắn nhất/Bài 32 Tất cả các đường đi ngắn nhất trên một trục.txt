@@ -1,0 +1,9 @@
+Bước 1: Tiền xử lý
+- Khởi Tạo Mảng Khoảng Cách:
+Tạo một mảng 2 chiều distance với kích thước V x V, trong đó V là số lượng đỉnh của đồ thị. Ban đầu, gán mỗi phần tử của distance bằng giá trị Infinity.
+- Tính khoảng cách
+Duyệt qua mỗi đỉnh u của đồ thị. Với mỗi đỉnh u, tính tổng trọng số của các cạnh từ u đến mỗi đỉnh khác v trên đồ thị (theo cả hai hướng, nếu có).
+Cập nhật distance[u][v] và distance[v][u] với tổng trọng số tính được.
+
+Bước 2: Truy vấn khoảng cách
+Sau khi tiền xử lý, để trả về khoảng cách ngắn nhất giữa hai đỉnh u và v, ta chỉ cần trả về giá trị distance[u][v] từ mảng đã tính toán.
